@@ -10,7 +10,7 @@ spec:
   ports:
     - targetPort: 80
       port: 80
-      nodePort: 31226
+      protocol: TCP
   selector:
       name: solar-system
       app: solar-system-app
