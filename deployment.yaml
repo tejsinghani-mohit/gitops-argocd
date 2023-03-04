@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-     labels:
-        app: solar-system
-     name: solar-system
+  name: solar-system
+  labels:
+    app: solar-system
 spec:
     replicas: 1
     selector:
-        matchLabels:
-             app: solar-system
+      matchLabels:
+        app: solar-system
     strategy: {}
     template:
-       metadata:
-            labels:
-               app: solar-system
-       spec:
-           containers:
+      metadata:
+        labels:
+          app: solar-system
+      spec:
+        containers:
            - image: siddharth67/solar-system:v9
              name: solar-system
              imagePullPolicy: Always
