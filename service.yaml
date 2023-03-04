@@ -1,16 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: solar-system-service
   labels:
-    name: solar-system-service
-    app: solar-system-app
+    app: solar-system
+  name: solar-system-service
 spec:
-  type: NodePort
   ports:
-    - targetPort: 80
-      port: 80
-      protocol: TCP
+  - port: 80 #change to 80
+    protocol: TCP
+    targetPort: 80 #change to 80
   selector:
-      name: solar-system
-      app: solar-system-app
+    app: solar-system
+  type: NodePort
