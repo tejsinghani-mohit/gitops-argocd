@@ -4,9 +4,9 @@ metadata:
   name: random-shapes-svc
 spec:
   ports:
-  - port: 81
+  - port: 80
     protocol: TCP
-    targetPort: 81
+    targetPort: 80
   selector:
     app: random-shapes
   type: NodePort
