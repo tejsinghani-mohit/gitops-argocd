@@ -6,7 +6,7 @@ spec:
   ports:
   - port: 80
     protocol: TCP
-    targetPort: 80
+    targetPort: 81
   selector:
     app: random-shapes
   type: NodePort
