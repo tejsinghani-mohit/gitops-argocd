@@ -6,7 +6,7 @@ data:
     health:
       healthProbeBindAddress: :6789
     metrics:
-      bindAddress: 192.168.0.1:9080
+      bindAddress: 127.0.0.1:8081
 
     leaderElection:
       leaderElect: true
