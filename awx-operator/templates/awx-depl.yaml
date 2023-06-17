@@ -6,4 +6,4 @@ metadata:
 spec:
   service_type: nodeport
   ingress_type: none
-  hostname: 192.168.0.1:8082
+  hostname: 192.168.0.191:8082
