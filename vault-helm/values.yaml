@@ -854,10 +854,10 @@ server:
         }
     
         seal "transit" {
-          address         = "http://192.168.0.191:8200"
-          token           = "hvs.CAESIDm6R2O9rGPYyFR5xj5fZKDIv810ui7L6V151-OpQFXoGh4KHGh2cy54NnVPbzNid0I2ajBIMTVrTEJVSTZzM2c"
+          address         = "http://192.168.0.118:8200"
+          token           = "hvs.CAESIDJmwpHdcA6ZUL0GFJXPIkumuu8j8h81-UpCMrBfBQxSGh4KHGh2cy5jQ1lTSVJyQ1hrdm5KTW9Xb0VGVVJwb08"
           disable_renewal = "false"
-          key_name        = "unseal-key"
+          key_name        = "unseal"
           mount_path      = "transit/"
           tls_skip_verify = "true"
         }
@@ -897,10 +897,10 @@ server:
       #   crypto_key  = "vault-helm-unseal-key"
       #}
       #seal "transit" {
-      #   address         = "http://192.168.0.191:8200"
-      #   token           = "hvs.CAESIDm6R2O9rGPYyFR5xj5fZKDIv810ui7L6V151-OpQFXoGh4KHGh2cy54NnVPbzNid0I2ajBIMTVrTEJVSTZzM2c"
+      #   address         = "http://192.168.0.118:8200"
+      #   token           = "hvs.CAESIDJmwpHdcA6ZUL0GFJXPIkumuu8j8h81-UpCMrBfBQxSGh4KHGh2cy5jQ1lTSVJyQ1hrdm5KTW9Xb0VGVVJwb08"
       #   disable_renewal = "false"
-      #   key_name        = "unseal-key"
+      #   key_name        = "unseal"
       #   mount_path      = "transit/"
       #   tls_skip_verify = "true"
       #}
